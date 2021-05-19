@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Confirmation HTML, CSS, JS</title>
+
+    <!-- My Styling -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="row-button">
+      <button class="button-modal" onclick="btnModal()">Open modal</button>
+    </div>
+
+    <div id="modal-confirmation" class="modal" style="display: none">
+      <div class="container-modal">
+        <div class="modal-head"></div>
+        <div class="modal-body">
+          <img src="/cancel.svg" alt="image-logo" />
+          <h2 class="title">Are you sure ?</h2>
+          <p>You will not be able to recover this file</p>
+          <div class="modal-button">
+            <button class="btn-modal cancel" onclick="btnCloseModal()">
+              Cancel
+            </button>
+            <button class="btn-modal confirm">Delete</button>
+          </div>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+
+    <!-- My js -->
+    <script src="/script.js"></script>
+  </body>
+</html>
